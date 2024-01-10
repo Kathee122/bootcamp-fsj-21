@@ -1,0 +1,17 @@
+body{
+    color: aqua;
+}
+ul{
+    color: aquamarine;
+    font-weight:bold;
+}
+.misImagenes{
+    margin-top: 30px;
+    width: 400px;
+}
+
+.img-circular{
+    border-radius: 50;
+    width: 200px;
+    height: 200px;
+}

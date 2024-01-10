@@ -1,0 +1,248 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:Robotodisplay;
+}
+
+/* ----- header ------ */
+.header{
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    position: sticky;
+    top: -5px;
+ 
+}
+
+.header .navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+
+}
+
+.header .navbar .logo{
+    font-size: 1.3em;
+    font-weight: 700;
+
+}
+
+.header .navbar .logo h2 span{
+    color: black;
+}
+
+.header .navbar .menu{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.header .navbar .menu li{
+    list-style: none;
+}
+
+.header .navbar .menu li a{
+    color: white;
+    text-decoration: none;
+    padding: 1.2rem 1.4rem;
+    transition: 0.5s;
+}
+
+/* --- animacion --- */
+.header .navbar .menu li a:hover{
+    font-size: 1.1rem;
+    text-shadow:5px 5px #282b65;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+/*--- inicio --*/
+.inicio{
+    background-color: cadetblue; 
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+.inicio .inicio-content h1{
+    font-size: 2em;
+    text-align: center;
+    color: white;
+}
+
+
+/*-- Main content --*/
+.main-content{
+    background-color: cadetblue;
+    color: white;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:2fr 2fr;
+    align-items: center;
+    gap: 1em;
+}
+
+.info-content{
+
+    text-shadow: 2 px 2 px black;
+
+}
+
+.info-content h1{
+    font-size: 2.5em;
+}
+
+.info-content .download-cv{
+    padding: 10 px 20 px;
+    background-color: aqua;
+    border: none;
+    border-radius: 25px;
+    margin-top: 10px;
+    box-shadow: 2px 3px 10px rgba(red, green, blue, alpha);
+    cursor: pointer;
+}
+
+.main-content img{
+    border: 4px solid aqua;
+    width:40%;
+    
+}
+
+/*-- Main content --*/
+.portfolio{
+    background-color: cadetblue;
+    padding-top: 15px;
+    color: white;
+}
+
+.portfolio .portfolio-header{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+.portfolio .portfolio-header h2{
+    text-shadow: 3px 3px rgb(red, green, blue);
+}
+
+.portfolio .portfolio-container{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+   
+}
+
+.portfolio .portfolio-container .card{
+    /*--border: 2px solid white;--*/
+    width: 18rem;
+    background-color:#282b65;
+
+    /*border-radius: 10%;*/
+
+}
+
+.portfolio .portfolio-container .card .card-img{
+    width: auto;
+    height: 150px;
+    background-image: url(https://sergiosanz.dev/static/b0ad08bfda05fba464bf2927db87772d/6df68/html-css.png);
+    background-size: cover;
+}
+
+.portfolio .portfolio-container .card .card-title{
+    padding: 20px;
+
+}
+
+.portfolio .portfolio-container .card .card-title h4{
+    font-size: 1.1rem;
+    
+}
+
+.portfolio .portfolio-container .card .card-links{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*-- contact section ---*/
+.contact-section{
+    width: 100vw;
+    display: flex;
+    background-color: cadetblue;
+    justify-content: center;
+}
+.contact-container{
+    font-size: 1.2em;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+.form-group .text-box{
+    border-radius: 10px;
+    margin-bottom: 1em;
+    border: none;
+    padding: 10px 20px;
+    box-shadow: 2px 2px 2px 2px rgb(190, 59, 149);
+}
+
+.form-group textarea{
+    height: 100px;
+    padding: 1.2em;
+    border-radius: 10px;
+    border: none;
+    /*-- background: none;
+    border: 1px solid white;*/
+    box-shadow: 2px 2px 2px 2px rgb(190, 59, 149);
+    margin-bottom: 1em;
+}
+
+.form-group .send-button{
+    margin: 1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: aqua;
+    text-transform: uppercase;
+    font-weight: 700;
+    box-shadow: 2px 2px 2px 2px rgb(190, 59, 149);
+    cursor: pointer;
+}
+
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: cadetblue;
+    height: 200px;
+    width: 100vw;
+    padding: 2em;   
+}
+
+.footer-content h2{
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.footer-content h5{
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.social-networks{
+    display: flex;
+   justify-content: space-evenly;
+   margin-top: 1em;
+   font-size: 1em;
+}
+
