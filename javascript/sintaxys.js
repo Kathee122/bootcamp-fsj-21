@@ -68,3 +68,53 @@ console.log(y)
 let o = 10 == 10 && 10 === "10"
 console.log(0)
 
+//--- Funciones ----
+// Tipos de funciones : Funcion que devuelve un valor y funcion que no devuelve nada
+//una funcion es una porcion de codigo que hace algo
+
+// declaracion de funcion
+function miFuncionQueDevuelve(params) {
+    return "soy un funcion que devuelve"
+}
+
+function miFuncionvacia(params) {
+    console.log("soy una funcion tipo void")
+}
+
+let resultadoFuncion1 = miFuncionQueDevuelve();
+let resultadoFuncion2 = miFuncionvacia();
+
+console.log(resultadoFuncion1+" y devuelvo un string");
+console.log(resultadoFuncion2+" y no devuelvo nada");
+
+//ejemplo de funcion que si devuelve
+function sumarDosNumeros(params) {
+    //console.log(5+5);
+    return 5+5;
+}
+
+function saludarusuario(params) {
+    console.log("Hola usuario")
+}
+
+let resultadosuma = sumarDosNumeros();
+let veinte = resultadosuma+10;
+console.log(veinte);
+saludarusuario();
+
+//PARAMETROS Valor que recibe la funcion para trabajar
+//Este valor viene de afuera de la funcion
+
+function sumaDosNumerosParam(num1,num2) {
+    console.log(num1+num2);
+    return num1+num2
+}
+
+let result = sumaDosNumerosParam(10,20);
+let result2 = sumaDosNumerosParam(153,431);
+
+function saludarUsuarioParam(nombre){
+    console.log("hola"+nombre)
+}
+saludarUsuarioParam("Jairo")
+saludarUsuarioParam("Steven")
