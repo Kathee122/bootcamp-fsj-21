@@ -118,3 +118,112 @@ function saludarUsuarioParam(nombre){
 }
 saludarUsuarioParam("Jairo")
 saludarUsuarioParam("Steven")
+
+//funciones anonimas
+//son funciones sin nombre
+
+let miFuncioncita = function(){
+    console.log("Hola")
+}
+miFuncioncita();
+
+let miFechecita = () => {
+    console.log("Hola")
+}
+
+function funcionoConCallback(funcion) {
+    funcion();
+}
+
+//callback es una funcion que se pasa como parametro a otra
+funcionoConCallback( () =>{console.log("soy un callback");});
+
+
+////--- Condicionales ----
+//IF (CONDICION) { CODIGO A EJECUTAR}
+let nombreAlumno = "katherine"
+let nombreAlumnoMinus = nombreAlumno.tolowerCase();
+
+if (nombreAlumnoMinus == "Katherine") {
+    console.log("Hola Katherine")
+} else{
+    console.log("Hola, ya se que no se quien sos");
+}
+
+if(nombreAlumnoMinus === "katherine"){
+    console.log("Hola Katherine")
+} else if(nombreAlumnoMinus === "jose"){
+    console.log("Hola Jose")
+} else{
+    console.log("Hola, ya se que no se quien sos, pero holi");
+}
+
+// condicional ternario
+// condicon caso true : caso false;
+nombreAlumnoMinus === "jairo" ? console.log("Hola Jairo") : console.log("hola quien sea");
+
+//switch
+switch (nombreAlumnoMinus) {
+    case katherine:
+        console.log("hola kath")
+        break;
+
+    default: console.log("hola otro nombre");
+        
+}
+
+let opcion = 1;
+switch(opcion){
+    case 1: console.log("Te estas comunicando con Josue")
+    break;
+    case 2: console.log("Te estas comuicando con Jose");
+    break;
+    case 3: console.log("Te estas comuicando con Marvin");
+}
+
+
+function calculadora(num1 , num2, operador){
+    switch (operador) {
+        case '+':
+          return num1 + num2;
+
+        case '-':
+          return num1 - num2;
+
+        case '*':
+            return num1 * num2;
+
+        case '/':
+            return num1 / num2;
+        
+        }     
+}
+
+console.log(calculadora(5, 8, "+"))
+
+//Crea una funcion que dado un numero me imprima si esta es para o impar
+
+function parImpar(numero){
+    if(numero % 2 === 0){
+        console.log("el numero es par");
+    }else{
+        console.log("el numero es impar");
+    }
+}
+parImpar(3);
+
+
+/*Escribe una función llamada calificacionEstudiante que tome 3 notas 
+como parametro y devuelva "Aprobado" si el promedio es mayor a 7, caso contrario devolver "Desaprobado".*/
+
+function calificacionEstudiante(nota1, nota2, nota3) {
+    let promedio = (nota1 + nota2 + nota3) / 3;
+
+    if (promedio >= 7) {
+      return "Aprobado";
+    } else {
+      return "Desaprobado";
+    }
+  }
+
+  console.log(calificacionEstudiante(8, 7, 9));
