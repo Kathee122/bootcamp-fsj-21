@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Esto es una etiqueta</h2>
+    <a href="#" id="hola" class="hola">Hola</a>
+
+    <input type="text" class="numero2">
+    <button onclick="obtenerNumero()">Enviar</button>
+    <input type="text" id="numero1">
+    <input type="text" id="numero2">
+    <button onclick="suma()">Sumar</button>
+    <input type="text" class="numero">
+
+    <select name="" id="" onchange="seleccionarFruta()">
+        <option value="Naranja">Naranja</option>
+        <option value="Uvas">Uvas</option>
+        <option value="Manzana">Manzana</option>
+    </select>
+
+    <form action="" onsubmit="genero()">
+        <input type="radio" value="fluido" name="genero">fluido
+        <input type="radio" value="binario" name = "genero">binario
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+<script>
+    document.querySelector('a')
+    document.querySelectorAll('.numero') //[]
+    document.querySelector('a[href="#"]')
+    document.querySelector('#hola')
+    document.querySelector('.hola')
+
+    document.getElementById('numero')
+
+    let titlo = document.querySelector('h2').textContent;
+    console.log(titlo);
+    //eventos
+
+    function obtenerNumero(){
+        let entrada1 = document.querySelector('.numero2').value;
+        console.log(entrada1)
+    }
+
+    function suma(){
+        let numero1 = document.getElementById('numero1').value;
+        let numero2 = document.getElementById('numero2').value;
+
+        let suma = 0;
+        suma = Number(numero1) + Number(numero2);
+        console.log("la suma es " + suma);
+    }
+
+    function seleccionarFruta(){
+        let fruta = document.querySelector('select').value;
+
+        alert("La fruta que seleccionaste fue " + fruta)
+    }
+
+    function genero(){
+        let opcion = document.querySelector('input[name = "genero"]').value;
+
+        console.log("el genero es :( )" + opcion);
+    }
+
+    
+</script>
+</html>

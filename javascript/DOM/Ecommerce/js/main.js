@@ -4,7 +4,6 @@ const listaCursos = document.querySelector('#lista-cursos');
 let cursosCarrito = [];
 
 listaCursos.addEventListener('click',agregarCurso)
-
 function agregarCurso(e){
     e.preventDefault()
     let cursoSeleccionado = e.target.parentElement.parentElement;
@@ -73,6 +72,7 @@ function vaciarCarrito(e){
     cursosCarrito = [];
     limpiarCarritoHTML();
 }
+
 function eliminarCurso(id){
     cursosCarrito.map( curso => {
         if(curso.id == id){
